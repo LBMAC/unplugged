@@ -138,7 +138,15 @@ p {
   font-size: .875em;
   line-height: 1.285;
 }
+
+img {
+ width: 100%;
+}
  
+figure {
+ margin: 0;
+}
+
 address {
  font-style: normal;
 }
@@ -165,6 +173,14 @@ header {
 
 header .content-wrapper {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header figure {
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -238,6 +254,10 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background: url(../img/retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -289,7 +309,9 @@ input[type=button] {
 /* Features */
 
 .features {
-  display: flex;
+  background: url('../img/camp.jpg');
+  background-size: cover;
+  background-position: center;display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
@@ -527,6 +549,9 @@ h3 {
   }
   /* Hero Area */
 
+  .hero-area {
+    min-height: 600px;
+  }
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
@@ -575,6 +600,7 @@ h3 {
     width: 85%;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
